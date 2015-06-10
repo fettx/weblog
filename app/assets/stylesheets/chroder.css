@@ -1,0 +1,32 @@
+html {
+	font-size: 18px;
+}
+
+.sidebar-about {
+	text-align: center;
+	border-bottom: 3px solid #eee;
+	margin-bottom: 18px;
+}
+
+.sidebar-about h1 {
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-size: 28pt;
+}
+
+.sidebar-about img {
+	margin: 0 auto;
+	border-radius: 80px;
+}
+
+.sidebar-sticky {
+	bottom: auto;
+	top: 1rem;
+}
+
+code.hljs {
+	font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace !important;
+	font-size: 11px;
+	max-height: 500px;
+	overflow: scroll;
+	word-wrap: none;
+}

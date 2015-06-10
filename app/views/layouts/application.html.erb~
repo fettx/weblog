@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1><a href="/">Daniel Tinivella Guzman</a></h1>
+      <img src="http://www.gravatar.com/avatar/c239f7f2cdfd5f4f578eb2f776287fa6?s=80" alt="gravatar">
+      <p class="lead">Developer Weblog</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="/">Weblog</a></li>
+      
+        <li class="sidebar-nav-item"><a href="http://www.chroder.com/about/">About</a></li>
+      
+    </ul>
+  </div>
+</div>
+<div class="content container">
+  
+  <!-- <div class="posts"> -->
+    
+  <!--   <div class="post"> -->
+  <!--     <h1 class="post-title"> -->
+  <!--       <a href="http://www.chroder.com/2014/02/01/using-ngmodelcontroller-with-custom-directives/">Using NgModelController with Custom Directives</a> -->
+  <!--     </h1> -->
+  <!--     <span class="post-date">Feb 1, 2014 &middot; 10 minute read &middot; <a href="http://www.chroder.com/2014/02/01/using-ngmodelcontroller-with-custom-directives/#disqus_thread">Comments</a></span> -->
+  <!--   </div> -->
+    
+  <!--   <div class="post"> -->
+  <!--     <h1 class="post-title"> -->
+  <!--       <a href="http://www.chroder.com/2014/02/01/ditching-google/">Ditching Google</a> -->
+  <!--     </h1> -->
+  <!--     <span class="post-date">Feb 1, 2014 &middot; 10 minute read &middot; <a href="http://www.chroder.com/2014/02/01/ditching-google/#disqus_thread">Comments</a></span> -->
+  <!--   </div> -->
+    
+  <!-- </div> -->
+  <%= yield %>
+</div>
+
+
+</body>
+</html>
