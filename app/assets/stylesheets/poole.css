@@ -294,6 +294,22 @@ tbody tr:nth-child(odd) th {
 }
 
 
+/* footer siempre abajo */
+
+.footer {
+    width: 100%;/* 960px; */
+    height: 30px;
+    margin-top: 1px auto 0;
+    background-color: transparent;
+    font-family:Courier,Monaco;
+    color: gray;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
 /*
  * Masthead
  *

@@ -1,14 +1,38 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
 
-<p>
-  <strong>Body:</strong>
+ <h1 class="title">
+  <%= @post.title %>
+</h1>
+
+<p class="body">
   <%= @post.body %>
 </p>
-
+<p>
+  <%=image_tag @post.image.url(:medium) %>
+</p>
+<p>
+ <% if user_signed_in? %> 
 <%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Back', posts_path %> |
+<%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure delete this publication?'} %>
+<% end %>
+
+
+</p>
+<h2>Comments </h2>
+
+   <!-- Comments for disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'fettx';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
